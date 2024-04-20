@@ -7,7 +7,7 @@
 ````shell
 $git config --global user.name
 $git config --global user.email 
-$git config --list //或者使用vim .gitconfig
+$git config --list #或者使用vim .gitconfig
 ````
 
 
