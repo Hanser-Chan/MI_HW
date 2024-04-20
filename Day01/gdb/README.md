@@ -45,6 +45,7 @@ $g++ -g main.cpp -o ptr
 ## 🤔无法找到core
 
 ![dSYM.png](https://img2.imgtp.com/2024/04/20/47bFmSv7.png)
+
 图中可见生成了编译文件和**macOS提供的*.dSYM***文件，但是并未找到相关core文件，这个也是我和同学们发现的一个非常奇怪的问题，他们也找不到core文件，他们的Ubantu只能生成前两个文件。
 
 ## 找到了.yml文件
