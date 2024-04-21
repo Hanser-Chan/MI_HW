@@ -43,6 +43,7 @@ public:
     void setRPoint4(const rPoint &rPoint4);
 
     double sideLen(const rPoint& rPoint11, const rPoint& rPoint22);
+
     double area(const Rectangle& rectangle);
 
 private:
@@ -52,7 +53,6 @@ private:
     rPoint rPoint4;
 };
 
-double area(const Rectangle& rectangle);
 bool isRectangle(const rPoint& rPoint1, const rPoint& rPoint2,
                  const rPoint& rPoint3, const rPoint& rPoint4);
 #endif //HW1_RECTANGLE_H

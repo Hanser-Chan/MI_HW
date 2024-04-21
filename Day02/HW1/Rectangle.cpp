@@ -50,15 +50,19 @@ void Rectangle::setRPoint4(const rPoint &rPoint4) {
     Rectangle::rPoint4 = rPoint4;
 }
 
-
-double sideLen(const rPoint& rPoint11, const rPoint& rPoint22){
+double Rectangle::sideLen(const rPoint &rPoint11, const rPoint &rPoint22) {
     double x1{rPoint11.getCoordinate().first},x2{rPoint22.getCoordinate().first};
     double y1{rPoint11.getCoordinate().second},y2{rPoint22.getCoordinate().second};
     double sideL = sqrt(( pow(x1-x2,2) ) + (pow(y1-y2,2) ));
     return sideL;
 }
 
-double area(const Rectangle& rectangle){
+
+double sideLen(const rPoint& rPoint11, const rPoint& rPoint22){
+
+}
+
+double Rectangle::area(const Rectangle& rectangle){
     double l1{sideLen(rectangle.getRPoint1(),rectangle.getRPoint2())};
     double l2{sideLen(rectangle.getRPoint2(),rectangle.getRPoint3())};
     //double l3{sideLen(rPoint1,rPoint4)};

@@ -19,7 +19,7 @@ int main() {
 
         std::cout << std::format("该矩形坐标为({},{})({},{})({},{})({},{})\n",
                                  x1,y1,x2,y2,x3,y3,x4,y4)
-                  << std::format("该矩形面积为{}\n", area(rectangle));
+                  << std::format("该矩形面积为{}\n", rectangle.area(rectangle));
     }else {
         std::cout << "这四个点不能围成矩形\n" ;
     }
