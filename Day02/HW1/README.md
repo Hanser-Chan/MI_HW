@@ -110,7 +110,7 @@ bool isRectangle(const rPoint& rPoint1, const rPoint& rPoint2,
 
 **步骤 2**：选择两组相邻的边（例如 \( AB \) 和 \( BC \)），并计算面积。
 
-- **面积**$ = AB \times BC$
+- **面积**$ = AB \times BC$ 
 
 ```cpp
 double Rectangle::area(const Rectangle& rectangle){
