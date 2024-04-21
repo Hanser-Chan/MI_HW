@@ -1,0 +1,3 @@
+/Users/CJJ/Documents/mi_hw/Day02/HW1/cmake-build-debug/CMakeFiles/HW1.dir
+/Users/CJJ/Documents/mi_hw/Day02/HW1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/CJJ/Documents/mi_hw/Day02/HW1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
