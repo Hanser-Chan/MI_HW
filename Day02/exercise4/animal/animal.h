@@ -42,7 +42,6 @@ class Dog : public animal
 public:
     Dog(int weight, const std::string &sex, int age);
 
-private:
     void bark() const;
 };
 
@@ -52,7 +51,6 @@ class Cat : public animal
 public:
     Cat(int weight, const std::string &sex, int age);
 
-private:
     void meow() const;
 };
 
