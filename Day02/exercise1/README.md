@@ -4,3 +4,4 @@
 $g++ -std=c++20 -o max max.cpp
 ```
 
+具体指令可见tasks.json
