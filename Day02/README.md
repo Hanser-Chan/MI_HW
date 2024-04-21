@@ -6,6 +6,6 @@
 1. 写一个book类；写一个animal类，dog，cat类继承animal
 1. 输入一个字符串，输出字符串内不同字母的个数
 
-
-
 # HW
+
+定义一个 Point 类表示平面上的一个点，在定义一个Rectangle 表示平面上的矩形，用 Point类的对象作为Rectangle成员描述平面上矩形的顶点坐标。要求类Point中有相应的成员函数可以读取点的坐标值，类Rectangle含有一个函数用于计算并输出矩形的顶点坐标及面积。在主函数中对类Rectangle进行测试
