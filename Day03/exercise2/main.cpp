@@ -9,28 +9,29 @@
  *定义一个int型的二维数组data[3[4]并初始化，再定义一个相应类型的指针变量p，并把&data赋值给指针变量0
  * */
 
-int main() {
+int main()
+{
 
-    std::array<int,10> arr{};
+    std::array<int, 10> arr{};
 
-    std::array<int,10> buf{};
-    //std::array<std::array<int,4>,3> data;
-    int* p{};
+    std::array<int, 10> buf{};
+    // std::array<std::array<int,4>,3> data;
+    int *p{};
 
     int data[3][4]{};
-//    int* data1 = data[0] ;
-//    int* data2 = data[1] ;
-//    int* data3 = data[2] ;
-//    int* dataP[] = {data1,data2,data3};
-//    int** pData_level2 = dataP ;
+    //    int* data1 = data[0] ;
+    //    int* data2 = data[1] ;
+    //    int* data3 = data[2] ;
+    //    int* dataP[] = {data1,data2,data3};
+    //    int** pData_level2 = dataP ;
 
-//  如果需要使用引用符需要以下代码：
+    //  如果需要使用引用符需要以下代码：
     int *dataX[4];
     dataX[0] = &data[0][0];
 
-    printf("%p\n",arr);
-    printf("%p\n",&arr);
-    printf("%p\n",&arr[0]);
+    printf("%p\n", arr);
+    printf("%p\n", &arr);
+    printf("%p\n", &arr[0]);
 
-    std::cout << std::format("sizeof(buf):{}\nsizeof()p:{}",sizeof(buf), sizeof(p));
+    std::cout << std::format("sizeof(buf):{}\nsizeof()p:{}", sizeof(buf), sizeof(p));
 }
