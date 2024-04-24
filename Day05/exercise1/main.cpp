@@ -1,8 +1,8 @@
 #include <iostream>
 #include <thread>
 #include <vector>
-#include <numeric>  // for std::accumulate
-#include <chrono>   // for high_resolution_clock
+#include <numeric>
+#include <chrono>
 
 void partial_sum(const std::vector<int>& data, int start, int end, long long& result) {
     result = std::accumulate(data.begin() + start, data.begin() + end, 0LL);
@@ -10,7 +10,7 @@ void partial_sum(const std::vector<int>& data, int start, int end, long long& re
 
 int main() {
     // 创建一个含有 10000 个元素的数组
-    std::vector<int> data(10000, 1);  // 假设每个元素值为1，简化生成过程
+    std::vector<int> data(10000, 1);
 
     // 定义结果变量和线程
     int num_threads = 4;
