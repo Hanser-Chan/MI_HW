@@ -29,9 +29,19 @@ namespace cjj{
         vector<std::thread>& threadX;
     };
 
+
+
     class ThreadPool{
     public:
         typedef std::function<void()> fun;  //封装所有有关函数
+        explicit ThreadPool(int n = 0);
+
+        ~ThreadPool()= default;
+
+        void stop()
+        {
+            m_stop.store(true, std::memory_order_release); //原子地以 true替换当前值。按照 order 的值影响内存。
+        }
 
 
     private:
@@ -40,7 +50,7 @@ namespace cjj{
         std::condition_variable m_cond;
 
         std::queue<fun> m_fun;
-        std::vector<std::thread> threads_;
+        std::vector<std::thread> m_threads;
         cjj::ThreadJoin m_tj;
 
     };

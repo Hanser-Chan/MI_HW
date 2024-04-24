@@ -13,3 +13,8 @@ cjj::ThreadJoin::~ThreadJoin(){
         }
     }
 }
+
+cjj::ThreadPool::~ThreadPool() {
+    stop();
+    m_cond.notify_all();    //通知所有等待的线程
+}
