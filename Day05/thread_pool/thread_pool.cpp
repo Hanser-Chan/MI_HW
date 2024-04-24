@@ -14,7 +14,19 @@ cjj::ThreadJoin::~ThreadJoin(){
     }
 }
 
+cjj::ThreadPool::ThreadPool(int n)
+        : m_stop(false)
+        , m_tj(m_threads)
+{
+    int nthreads = n;
+    if (nthreads <= 0)
+    {
+        nthreads = std::thread::hardware_concurrency(); //检查支持的线程数
+        nthreads = (nthreads == 0 ? 2 : nthreads);
+    }
+}
+
 cjj::ThreadPool::~ThreadPool() {
     stop();
-    m_cond.notify_all();    //通知所有等待的线程
+    m_cond.notify_all();    //通知所有等待的线程, 解阻塞
 }

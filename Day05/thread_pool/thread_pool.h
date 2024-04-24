@@ -36,7 +36,7 @@ namespace cjj{
         typedef std::function<void()> fun;  //封装所有有关函数
         explicit ThreadPool(int n = 0);
 
-        ~ThreadPool()= default;
+        ~ThreadPool();
 
         void stop()
         {
