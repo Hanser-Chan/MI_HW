@@ -27,6 +27,14 @@ namespace cjj{
 
     private:
         vector<std::thread>& threadX;
+
+
+    private:
+        ThreadJoin(ThreadJoin&& tj) = delete;
+        ThreadJoin& operator = (ThreadJoin&& tj) = delete;
+
+        ThreadJoin(const ThreadJoin&) = delete;
+        ThreadJoin& operator = (const ThreadJoin&) = delete;
     };
 
 
@@ -43,6 +51,15 @@ namespace cjj{
             m_stop.store(true, std::memory_order_release); //原子地以 true替换当前值。按照 order 的值影响内存。
         }
 
+        template<class Function, class... Args>
+        std::future<typename std::result_of<Function(Args...)>::type> add(Function&&, Args&&...);
+
+
+    private:
+        ThreadPool(ThreadPool&&) = delete;
+        ThreadPool& operator= (ThreadPool&&) = delete;
+        ThreadPool(const ThreadPool&) = delete;
+        ThreadPool& operator= (const ThreadPool&) = delete;
 
     private:
         std::atomic<bool> m_stop;
@@ -53,10 +70,28 @@ namespace cjj{
         std::vector<std::thread> m_threads;
         cjj::ThreadJoin m_tj;
 
+
     };
 
 
+    template <class Function, class... Args>
+    std::future<typename std::result_of<Function(Args...)>::type>
+    cjj::ThreadPool::add(Function&& fcn, Args&&... args)
+    {
+        typedef typename std::result_of<Function(Args...)>::type return_type;
+        typedef std::packaged_task<return_type()> task;
 
+        auto t = std::make_shared<task>(std::bind(std::forward<Function>(fcn), std::forward<Args>(args)...));
+        auto ret = t->get_future();
+        {
+            std::lock_guard<std::mutex> lg(m_mtx);
+            if (m_stop.load(std::memory_order_acquire))
+                throw std::runtime_error("thread pool has stopped");
+            m_fun.emplace([t]{(*t)(); });
+        }
+        m_cond.notify_one();
+        return ret;
+    }
 
 
 
