@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/LogExe.dir/main.cpp.o CMakeFiles/LogExe.dir/src/easylogging++.cc.o -o LogExe 

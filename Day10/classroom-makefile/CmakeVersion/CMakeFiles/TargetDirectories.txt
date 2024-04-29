@@ -1,0 +1,3 @@
+/home/ubuntu2204/桌面/cmakeVersion/CMakeFiles/LogExe.dir
+/home/ubuntu2204/桌面/cmakeVersion/CMakeFiles/edit_cache.dir
+/home/ubuntu2204/桌面/cmakeVersion/CMakeFiles/rebuild_cache.dir

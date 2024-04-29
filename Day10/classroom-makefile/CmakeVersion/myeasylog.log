@@ -1,0 +1,6 @@
+2024-04-29 10:39:49,192 INFO [default] this is info log
+2024-04-29 10:39:49,193 ERROR [default] this is error log
+2024-04-29 10:39:49,193 DEBUG [default] [ubuntu2204@unknown-host] [int main(int, char**)] [/home/ubuntu2204/桌面/cmakeVersion/main.cpp:8] this is debug log
+2024-04-29 10:40:00,086 INFO [default] this is info log
+2024-04-29 10:40:00,086 ERROR [default] this is error log
+2024-04-29 10:40:00,086 DEBUG [default] [ubuntu2204@unknown-host] [int main(int, char**)] [/home/ubuntu2204/桌面/cmakeVersion/main.cpp:8] this is debug log
