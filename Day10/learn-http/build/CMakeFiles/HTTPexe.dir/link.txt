@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/HTTPexe.dir/main.cpp.o CMakeFiles/HTTPexe.dir/src/download.cpp.o CMakeFiles/HTTPexe.dir/src/get.cpp.o -o HTTPexe  -Wl,-rpath,/home/ubuntu2204/桌面/learn-http/build/libghttp libghttp/liblibghttp.so 

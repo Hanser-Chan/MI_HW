@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+E:/android/AiAssist/app/src/main/cpp/cJSON/CMakeLists.txt
+E:/android/AiAssist/app/src/main/cpp/cJSON/library_config/cJSONConfig.cmake.in
+E:/android/AiAssist/app/src/main/cpp/cJSON/library_config/cJSONConfigVersion.cmake.in
+E:/android/AiAssist/app/src/main/cpp/cJSON/library_config/libcjson.pc.in
+E:/cmake-3.27.5-windows-x86_64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+E:/cmake-3.27.5-windows-x86_64/share/cmake-3.27/Modules/CheckCCompilerFlag.cmake
+E:/cmake-3.27.5-windows-x86_64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake
+E:/cmake-3.27.5-windows-x86_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake
+E:/cmake-3.27.5-windows-x86_64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake
+E:/cmake-3.27.5-windows-x86_64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake
+E:/cmake-3.27.5-windows-x86_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake

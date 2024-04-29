@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,liblibghttp.so -o liblibghttp.so CMakeFiles/libghttp.dir/ghttp.c.o CMakeFiles/libghttp.dir/http_base64.c.o CMakeFiles/libghttp.dir/http_date.c.o CMakeFiles/libghttp.dir/http_hdrs.c.o CMakeFiles/libghttp.dir/http_req.c.o CMakeFiles/libghttp.dir/http_resp.c.o CMakeFiles/libghttp.dir/http_trans.c.o CMakeFiles/libghttp.dir/http_uri.c.o 

@@ -1,0 +1,6 @@
+/home/ubuntu2204/桌面/learn-http/build/CMakeFiles/HTTPexe.dir
+/home/ubuntu2204/桌面/learn-http/build/CMakeFiles/edit_cache.dir
+/home/ubuntu2204/桌面/learn-http/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu2204/桌面/learn-http/build/libghttp/CMakeFiles/libghttp.dir
+/home/ubuntu2204/桌面/learn-http/build/libghttp/CMakeFiles/edit_cache.dir
+/home/ubuntu2204/桌面/learn-http/build/libghttp/CMakeFiles/rebuild_cache.dir
