@@ -1,0 +1,40 @@
+log: main.o easylogging++.o 
+	g++ -o log main.o easylogging++.o 
+
+main.o: main.cpp ./src/easylogging++.h
+	g++ -c main.cpp 
+
+easylogging++.o: ./src/easylogging++.cc
+	g++ -c ./src/easylogging++.cc
+
+
+
+# # 设置编译器
+# CXX := g++
+# # 设置编译选项
+# CXXFLAGS := -std=c++11 -Wall -Wextra
+
+# # 设置目标文件和源文件路径
+# TARGET := main
+# SRCDIR := src
+# OBJDIR := src
+
+# # 列出所有的源文件和它们对应的目标文件
+# SOURCES := $(wildcard $(SRCDIR)/*.cpp)
+# OBJECTS := $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SOURCES))
+
+# # 默认目标
+# all: $(TARGET)
+
+# # 生成可执行文件
+# $(TARGET): $(OBJECTS)
+# 	$(CXX) $(CXXFLAGS) $^ -o $@
+
+# # 生成目标文件
+# $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
+# 	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# # 清理生成的文件
+# #clean:
+# #	rm -f $(OBJDIR)/*.o $(TARGET)
+
