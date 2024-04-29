@@ -1,0 +1,4 @@
+/home/ubuntu2204/桌面/classroom-base/CMakeFiles/base_static_library.dir
+/home/ubuntu2204/桌面/classroom-base/CMakeFiles/base_shared_library.dir
+/home/ubuntu2204/桌面/classroom-base/CMakeFiles/edit_cache.dir
+/home/ubuntu2204/桌面/classroom-base/CMakeFiles/rebuild_cache.dir
