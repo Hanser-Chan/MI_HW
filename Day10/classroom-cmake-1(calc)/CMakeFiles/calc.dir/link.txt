@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/calc.dir/add.cpp.o CMakeFiles/calc.dir/division.cpp.o CMakeFiles/calc.dir/main.cpp.o CMakeFiles/calc.dir/mutiple.cpp.o CMakeFiles/calc.dir/sub.cpp.o -o calc 

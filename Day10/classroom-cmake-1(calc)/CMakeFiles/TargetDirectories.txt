@@ -1,0 +1,3 @@
+/home/ubuntu2204/桌面/classroom-cmake-1(calc)/CMakeFiles/calc.dir
+/home/ubuntu2204/桌面/classroom-cmake-1(calc)/CMakeFiles/edit_cache.dir
+/home/ubuntu2204/桌面/classroom-cmake-1(calc)/CMakeFiles/rebuild_cache.dir
