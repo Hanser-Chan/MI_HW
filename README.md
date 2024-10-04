@@ -1,7 +1,7 @@
 # 小米训练营HW总览
 [可以来这里看我的介绍哦](https://hanser-chan.github.io/2024/10/01/categories/University/xiaomi/)
 
-有关训练营的事可以随时联系我。
+有关训练营的事可以随时联系我。[邮箱](mailto:memechs33@outlook.com)
 
 
 
